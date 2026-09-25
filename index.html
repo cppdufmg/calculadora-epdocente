@@ -175,22 +175,22 @@
             let pares = parseNum(document.getElementById('inp-pares').value);
             let discente = parseNum(document.getElementById('inp-discente').value);
 
-            // Regras de limite: Impede o utilizador de digitar números acima do permitido
+            // Regras de limite com formatação forçada para duas casas decimais
             if (chefia > 95) {
                 chefia = 95;
-                document.getElementById('inp-chefia').value = 95;
+                document.getElementById('inp-chefia').value = "95.00";
             }
             if (auto > 95) {
                 auto = 95;
-                document.getElementById('inp-auto').value = 95;
+                document.getElementById('inp-auto').value = "95.00";
             }
             if (pares > 95) {
                 pares = 95;
-                document.getElementById('inp-pares').value = 95;
+                document.getElementById('inp-pares').value = "95.00";
             }
             if (discente > 5) {
                 discente = 5;
-                document.getElementById('inp-discente').value = 5;
+                document.getElementById('inp-discente').value = "5.00";
             }
 
             const notaChefia = chefia * 0.60;
@@ -249,14 +249,14 @@
             }
         }
 
-        // Adiciona um "ouvinte" em cada campo
+        // Adiciona ouvintes em cada campo
         inputs.forEach(input => {
-            // Calcula enquanto a pessoa digita
+            // Calcula as notas imediatamente enquanto a pessoa digita
             input.addEventListener('input', calcularNotas);
             
-            // Formata o próprio campo com duas casas decimais quando o utilizador clica fora dele
+            // Quando a pessoa clica fora do campo (blur), força a exibição de 2 casas decimais
             input.addEventListener('blur', (e) => {
-                if(e.target.value !== "") {
+                if (e.target.value !== "") {
                     e.target.value = parseFloat(e.target.value).toFixed(2);
                 }
             });
