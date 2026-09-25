@@ -36,40 +36,40 @@
                         <tr class="border-b border-gray-200 hover:bg-gray-50">
                             <td class="px-4 py-3 border-r border-gray-200 font-medium">Chefia Imediata*</td>
                             <td class="p-1 border-r border-gray-200">
-                                <input type="number" id="inp-chefia" min="0" max="95" placeholder="0" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
+                                <input type="number" id="inp-chefia" min="0" max="95" step="0.01" placeholder="0.00" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
                             </td>
                             <td class="px-4 py-3 border-r border-gray-200 text-center">60%</td>
-                            <td id="out-chefia" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0</td>
+                            <td id="out-chefia" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0,00</td>
                         </tr>
 
                         <!-- Linha 2 -->
                         <tr class="border-b border-gray-200 hover:bg-gray-50">
                             <td class="px-4 py-3 border-r border-gray-200 font-medium">Autoavaliação*</td>
                             <td class="p-1 border-r border-gray-200">
-                                <input type="number" id="inp-auto" min="0" max="95" placeholder="0" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
+                                <input type="number" id="inp-auto" min="0" max="95" step="0.01" placeholder="0.00" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
                             </td>
                             <td class="px-4 py-3 border-r border-gray-200 text-center">15%</td>
-                            <td id="out-auto" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0</td>
+                            <td id="out-auto" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0,00</td>
                         </tr>
 
                         <!-- Linha 3 -->
                         <tr class="border-b border-gray-200 hover:bg-gray-50">
                             <td class="px-4 py-3 border-r border-gray-200 font-medium">Pares (Comissão Avaliadora)**</td>
                             <td class="p-1 border-r border-gray-200">
-                                <input type="number" id="inp-pares" min="0" max="95" placeholder="0" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
+                                <input type="number" id="inp-pares" min="0" max="95" step="0.01" placeholder="0.00" title="A nota deve ser de 0 a 95" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
                             </td>
                             <td class="px-4 py-3 border-r border-gray-200 text-center">25%</td>
-                            <td id="out-pares" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0</td>
+                            <td id="out-pares" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0,00</td>
                         </tr>
 
                         <!-- Linha 4 -->
                         <tr class="border-b border-gray-300 hover:bg-gray-50">
                             <td class="px-4 py-3 border-r border-gray-200 font-medium">Avaliação Discente***</td>
                             <td class="p-1 border-r border-gray-200">
-                                <input type="number" id="inp-discente" min="0" max="5" placeholder="0" title="A nota deve ser de 0 a 5" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
+                                <input type="number" id="inp-discente" min="0" max="5" step="0.01" placeholder="0.00" title="A nota deve ser de 0 a 5" class="w-full p-1.5 text-center font-bold text-base border-2 border-blue-500 bg-blue-50 text-blue-900 rounded-md shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-600 focus:bg-white hover:bg-blue-100 transition-all">
                             </td>
                             <td class="px-4 py-3 border-r border-gray-200 text-center font-bold">-</td>
-                            <td id="out-discente" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0</td>
+                            <td id="out-discente" class="px-4 py-3 text-center font-semibold text-gray-900 bg-gray-50">0,00</td>
                         </tr>
 
                         <!-- Linha TOTAL -->
@@ -78,7 +78,7 @@
                                 Pontuação Total Obtida (Soma das Notas Finais Apuradas)
                             </td>
                             <td id="out-total" class="px-4 py-4 text-center font-bold text-xl text-gray-900 bg-blue-50">
-                                0
+                                0,00
                             </td>
                         </tr>
                     </tbody>
@@ -155,9 +155,9 @@
             return isNaN(num) ? 0 : num;
         };
 
-        // Formatador para o padrão brasileiro
+        // Formatador para o padrão brasileiro (Forçando sempre 2 casas decimais)
         const formatNumber = (num) => {
-            return num.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+            return num.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         };
 
         // Referências aos inputs
@@ -175,7 +175,7 @@
             let pares = parseNum(document.getElementById('inp-pares').value);
             let discente = parseNum(document.getElementById('inp-discente').value);
 
-            // Regras de limite: Impede o usuário de digitar números acima do permitido
+            // Regras de limite: Impede o utilizador de digitar números acima do permitido
             if (chefia > 95) {
                 chefia = 95;
                 document.getElementById('inp-chefia').value = 95;
@@ -249,9 +249,17 @@
             }
         }
 
-        // Adiciona um "ouvinte" em cada campo para calcular enquanto a pessoa digita
+        // Adiciona um "ouvinte" em cada campo
         inputs.forEach(input => {
+            // Calcula enquanto a pessoa digita
             input.addEventListener('input', calcularNotas);
+            
+            // Formata o próprio campo com duas casas decimais quando o utilizador clica fora dele
+            input.addEventListener('blur', (e) => {
+                if(e.target.value !== "") {
+                    e.target.value = parseFloat(e.target.value).toFixed(2);
+                }
+            });
         });
     </script>
 </body>
